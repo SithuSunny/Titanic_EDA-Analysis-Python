@@ -1,43 +1,71 @@
-# Titanic Dataset – Exploratory Data Analysis (EDA)
+# 🚢 Titanic Survival Analysis – Exploratory Data Analysis (EDA)
 
-## Objective:
-To extract meaningful patterns and insights from the Titanic dataset using statistical analysis and visualization.
+This project explores the Titanic dataset to identify patterns that influenced passenger survival using data visualization and statistical analysis in Python.
 
-## Tools Used:
-- Python
-- Jupyter Notebook
-- Pandas, Matplotlib, Seaborn
+---
 
-##  Process Followed:
+## 📌 Objective
+Perform a structured exploratory data analysis (EDA) to uncover trends in survival based on gender, passenger class, age, and fare.
 
-1. **Data Loading and Overview**
-   - Used `.info()`, `.describe()`, `.value_counts()` to understand structure and missing values.
+---
 
-2. **Data Cleaning**
-   - Filled missing Age with median, Embarked with mode.
-   - Dropped 'Cabin' column due to too many nulls.
+## 🧰 Tools & Technologies
+- **Language:** Python
+- **Libraries:** Pandas, Matplotlib, Seaborn
+- **Environment:** Jupyter Notebook
 
-3. **Univariate Analysis**
-   - Plotted Age and Fare distributions using histograms and boxplots.
+---
 
-4. **Bivariate/Multivariate Analysis**
-   - Used `sns.pairplot`, `heatmap`, `scatterplot`, `countplot` to compare survival with:
-     - Age
-     - Fare
-     - Gender
-     - Passenger Class
+## 📂 Dataset
+- **Source:** [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic)
+- **Records:** 891 passengers
+- **Features:** Age, Sex, Pclass, Fare, SibSp, Parch, Embarked, etc.
 
-5. **Observations**
-   - Female passengers and 1st class had higher survival rates.
-   - Fare was positively correlated with survival.
-   - Age distribution was right-skewed.
-   - Many 3rd class passengers did not survive.
+---
 
-## 📁 Files Included:
-- Titanic_EDA.ipynb 
-- Titanic_EDA.pdf 
-- README.md
+## 🔍 Analysis Workflow
 
-## ✅ Outcome:
-Improved understanding of EDA process and storytelling with data. Built strong insights using visual tools.
+### 1. Data Loading and Initial Exploration
+- Imported dataset using Pandas
+- Used `.info()`, `.describe()`, and `.value_counts()` to understand structure
 
+### 2. Data Cleaning
+- Handled missing values in `Age` and `Embarked`
+- Dropped `Cabin` due to high null count
+
+### 3. Univariate Analysis
+- Age: Most passengers were 20–40 years old
+- Fare: Right-skewed distribution with outliers
+
+### 4. Bivariate & Multivariate Analysis
+- Higher survival among females and 1st class passengers
+- Visualized `Survived` vs `Sex`, `Pclass`, `Age`, and `Fare`
+
+### 5. Correlation Analysis
+- Heatmap showed:
+  - Positive correlation: `Fare` (0.26)
+  - Negative correlation: `Pclass` (-0.34)
+
+---
+
+## 📊 Key Insights
+
+- 🎯 **Female passengers had higher survival rates than males.**
+- 🛏️ **1st class passengers were more likely to survive.**
+- 💸 **Fare is positively correlated with survival.**
+- 🧒 **Most passengers were aged 20–40.**
+- 🚪 **Majority of 3rd class passengers did not survive.**
+
+---
+
+## ✅ Outcome
+
+This project demonstrates a structured approach to EDA, combining data cleaning, visualization, and insights communication. It showcases my data analysis skills using Python tools and storytelling through data.
+
+---
+
+## 📁 Files Included
+
+- `Titanic_EDA_Final.ipynb` – Final analysis notebook
+- `Titanic_EDA_Report.pdf` – Exported PDF version of the notebook
+- `README.md` – Project overview and insights
